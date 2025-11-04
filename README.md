@@ -28,4 +28,10 @@ The goal is to **automate data preparation** (loading, cleaning, transforming) a
 | Version Control | Git & GitHub |
 
 ---
+## 📈 The terminal output 
+```bash
+Epoch 20/20
+loss: 284832.5938 - mae: 405.3340
+✅ Model trained! Mean Absolute Error: 445.95
+```
 
