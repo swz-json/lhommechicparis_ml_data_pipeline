@@ -5,9 +5,6 @@ End-to-end data pipeline project for L’Homme Chic Paris: loading, cleaning, an
 This project demonstrates an **end-to-end data pipeline** built for **L’Homme Chic Paris**, an e-commerce brand specialized in men’s accessories.  
 The goal is to **automate data preparation** (loading, cleaning, transforming) and deliver clean datasets to a **TensorFlow machine-learning model** for analytics and forecasting.
 
-> 🧩 Inspired by the open-source framework [tfdsio](https://github.com/trisongz/tfdsio), which dynamically builds TensorFlow / PyTorch datasets.  
-> Here, I reproduced the same logic manually for my brand’s sales data using `pandas`, `scikit-learn`, and `TensorFlow`.
-
 ---
 
 ## ⚙️ Features  
@@ -20,3 +17,15 @@ The goal is to **automate data preparation** (loading, cleaning, transforming) a
 ✅ Ready for future automation with Airflow or Power BI integration  
 
 ---
+
+## 🧰 Tech Stack  
+| Category | Tools |
+|-----------|-------|
+| Data Handling | Python, Pandas |
+| Machine Learning | TensorFlow, Scikit-learn |
+| Automation | (planned) Apache Airflow |
+| Visualization | Power BI (planned) |
+| Version Control | Git & GitHub |
+
+---
+
