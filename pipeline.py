@@ -3,39 +3,36 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import tensorflow as tf
 
-# 1️⃣ Load your Excel file
+
 data = pd.read_excel("data/bd-vente.xlsx")
 
 print("✅ Data loaded successfully!")
-print(data.head())  # show first rows
+print(data.head())  
 
-# 2️⃣ Remove missing values
+
 data = data.dropna()
 
-# 3️⃣ Choose features (inputs) and target (output)
-# ⚠️ Update these column names to match your Excel file
-X = data[["Quantity", "Price"]]      # inputs
-y = data["Price"] * data["Quantity"]     # target = total sale amount
+X = data[["Quantity", "Price"]]      
+y = data["Price"] * data["Quantity"]     
 
 data["total amount"] = y
 data.to_excel("data/clean_bd_vente.xlsx", index=False)
 
-# 4️⃣ Normalize the features
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
-# 5️⃣ Split into training & test sets
+
 X_train, X_test, y_train, y_test = train_test_split(
     X_scaled, y, test_size=0.2, random_state=42
 )
 
-# 6️⃣ Convert to TensorFlow datasets
+
 train_ds = tf.data.Dataset.from_tensor_slices((X_train, y_train)).batch(2)
 test_ds = tf.data.Dataset.from_tensor_slices((X_test, y_test)).batch(2)
 
 print("✅ Data ready for TensorFlow!")
 
-# 7️⃣ Define a small neural network
+
 model = tf.keras.Sequential([
     tf.keras.layers.Dense(16, activation='relu', input_shape=(2,)),
     tf.keras.layers.Dense(8, activation='relu'),
@@ -47,4 +44,5 @@ model.fit(train_ds, epochs=20)
 
 loss, mae = model.evaluate(test_ds)
 print(f"✅ Model trained! Mean Absolute Error: {mae:.2f}")
+
 
