@@ -29,6 +29,8 @@ The goal is to **automate data preparation** (loading, cleaning, transforming) a
 
 ---
 ## 📈 The terminal output 
+After 20 epochs of training, the model achieved a Mean Absolute Error ≈ 445 €, meaning on average the prediction is within ± 445 € of the actual sales value.
+
 ```bash
 Epoch 20/20
 loss: 284832.5938 - mae: 405.3340
