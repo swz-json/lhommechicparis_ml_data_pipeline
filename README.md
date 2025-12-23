@@ -25,6 +25,12 @@ L'objectif est d'automatiser la préparation des données (chargement, nettoyage
 
 ---
 
+## 📊 Project Results (Power BI Dashboard)
+Here is the final output of the data pipeline, visualizing sales performance and customer insights:
+
+
+<img width="1341" height="753" alt="dashboard" src="https://github.com/user-attachments/assets/db114ae3-af33-46b9-914a-cbcbfd0b076b" />
+
 ## 🧰 Stack Technique
 | Category | Tools |
 |-----------|-------|
