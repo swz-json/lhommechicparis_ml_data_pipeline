@@ -102,7 +102,7 @@ pip install -r requirements.txt
 
 # 3. Lancer le pipeline ETL et l'entraînement
 python main.py
-
-
+```
+<div align="center"> <sub>Développé par <b>Wassim Elmoufakkir</b> pour L'Homme Chic Paris</sub> </div>
 
 
