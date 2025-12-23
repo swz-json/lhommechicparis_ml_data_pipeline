@@ -11,6 +11,19 @@
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458)
 ![Power BI](https://img.shields.io/badge/PowerBI-Dashboard-F2C811)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
+</div>
+
+## 📖 Contexte Métier
+
+Ce pipeline a été conçu pour [L'Homme Chic Paris](https://lhommechicparis.com/), une marque française DNVB (Digital Native Vertical Brand) spécialisée dans les **coffrets d'accessoires pour hommes** (Sets de cravates, montres, ceintures).
+
+**Le Défi Data :**
+Le business model de la marque repose sur la vente de "looks complets" (Bundles). L'enjeu de ce projet était de construire une infrastructure capable de :
+1.  **Tracker la performance des Coffrets vs Produits Unitaires** : Comprendre si les clients préfèrent acheter un set complet (ex: "Set Hiver Marron") ou composer leur propre look.
+2.  **Prédire les ruptures de stock** sur les composants d'un coffret (si la ceinture manque, tout le coffret devient invendable).
+
+Ce pipeline automatise l'ingestion des ventes WooCommerce pour alimenter ces analyses stratégiques.
+
 
 ## 📖 Aperçu du Projet
 
@@ -21,6 +34,8 @@ L'objectif principal est de transformer des données brutes transactionnelles en
 2.  Un **Modèle de Machine Learning (TensorFlow)** pour la prévision des ventes.
 
 ---
+
+
 
 ## 🏗️ Architecture & Flux de Données
 
@@ -42,6 +57,12 @@ Le pipeline alimente ce tableau de bord interactif, permettant aux équipes mét
 
 ![Tableau de bord Power BI L'Homme Chic Paris](https://github.com/user-attachments/assets/db114ae3-af33-46b9-914a-cbcbfd0b076b)
 *Vue d'ensemble : Chiffre d'affaires, Panier moyen, Analyse géographique et Top Produits.*
+> **Insights Clés :**
+> * Suivi en temps réel du Chiffre d'Affaires (377K€) et du Panier Moyen.
+> * Analyse géographique des ventes (Top villes : Houston, Los Angeles).
+> * Identification des produits "Best-Sellers" pour optimiser les stocks.
+
+---
 
 ---
 
@@ -61,13 +82,12 @@ Le pipeline alimente ce tableau de bord interactif, permettant aux équipes mét
 
 ## 🧰 Stack Technique
 
-| Domaine | Outils utilisés |
-|-----------|-----------------|
-| **Langage** | Python 3.10 |
-| **Manipulation de Données** | Pandas, NumPy |
-| **Machine Learning** | TensorFlow, Scikit-learn |
-| **Visualisation** | Power BI, Matplotlib |
-| **Contrôle de Version** | Git & GitHub |
+| Catégorie | Technologies | Usage |
+|-----------|--------------|-------|
+| **Core** | ![Python](https://img.shields.io/badge/-Python-black?logo=python) | Langage principal du pipeline |
+| **Data** | ![Pandas](https://img.shields.io/badge/-Pandas-black?logo=pandas) ![NumPy](https://img.shields.io/badge/-NumPy-black?logo=numpy) | Manipulation et calcul matriciel |
+| **ML / AI** | ![TensorFlow](https://img.shields.io/badge/-TensorFlow-black?logo=tensorflow) ![Scikit-Learn](https://img.shields.io/badge/-ScikitLearn-black?logo=scikit-learn) | Modélisation prédictive et split Train/Test |
+| **Viz** | ![Power BI](https://img.shields.io/badge/-Power%20BI-black?logo=powerbi) | Création du tableau de bord interactif |
 
 ---
 
@@ -82,3 +102,7 @@ pip install -r requirements.txt
 
 # 3. Lancer le pipeline ETL et l'entraînement
 python main.py
+
+
+
+
