@@ -4,7 +4,7 @@
 
 
 
-# 👔 Pipeline Data & ML End-to-End : L'Homme Chic Paris
+#  Pipeline Data & ML End-to-End : L'Homme Chic Paris
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0%2B-orange)
@@ -13,7 +13,7 @@
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 </div>
 
-## 📖 Contexte Métier
+##  Contexte Métier
 
 Ce pipeline a été conçu pour [L'Homme Chic Paris](https://lhommechicparis.com/), une marque française DNVB (Digital Native Vertical Brand) spécialisée dans les **coffrets d'accessoires pour hommes** (Sets de cravates, montres, ceintures).
 
@@ -25,7 +25,7 @@ Le business model de la marque repose sur la vente de "looks complets" (Bundles)
 Ce pipeline automatise l'ingestion des ventes WooCommerce pour alimenter ces analyses stratégiques.
 
 
-## 📖 Aperçu du Projet
+##  Aperçu du Projet
 
 Ce projet est un pipeline de données complet (**End-to-End**) conçu pour **L'Homme Chic Paris**, une marque e-commerce spécialisée dans la mode masculine.
 
@@ -37,7 +37,7 @@ L'objectif principal est de transformer des données brutes transactionnelles en
 
 
 
-## 🏗️ Architecture & Flux de Données
+##  Architecture & Flux de Données
 
 Le projet suit un flux ETL (Extract, Transform, Load) strict :
 
@@ -66,7 +66,7 @@ Le pipeline alimente ce tableau de bord interactif, permettant aux équipes mét
 
 ---
 
-## ⚙️ Fonctionnalités Techniques
+##  Fonctionnalités Techniques
 
 ### 🔹 Data Engineering
 - **ETL Automatisé :** Script Python modulaire pour le traitement des fichiers Excel.
@@ -80,7 +80,7 @@ Le pipeline alimente ce tableau de bord interactif, permettant aux équipes mét
 
 ---
 
-## 🧰 Stack Technique
+##  Stack Technique
 
 | Catégorie | Technologies | Usage |
 |-----------|--------------|-------|
