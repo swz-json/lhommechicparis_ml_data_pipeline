@@ -53,7 +53,7 @@ Le projet suit un flux ETL (Extract, Transform, Load) strict :
 
 ## 📊 Business Intelligence (Résultats)
 
-Le pipeline alimente ce tableau de bord interactif, permettant aux équipes métier de suivre les performances en temps réel.
+Le pipeline alimente ce tableau de bord interactif développé avec **Power BI**, permettant aux équipes métier de suivre les performances en temps réel.
 
 ![Tableau de bord Power BI L'Homme Chic Paris](https://github.com/user-attachments/assets/db114ae3-af33-46b9-914a-cbcbfd0b076b)
 *Vue d'ensemble : Chiffre d'affaires, Panier moyen, Analyse géographique et Top Produits.*
